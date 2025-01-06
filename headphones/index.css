@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Source Sans Pro;
+    src: url(fonts/SourceSansPro-Black.otf);
+}
+
+@font-face {
+    font-family: Source Sans Pro-Light;
+    src: url(fonts/SourceSansPro-Light.otf);
+}
+
+@font-face {
+    font-family: Source Sans Pro-Bold;
+    src: url(fonts/SourceSansPro-Bold.otf);
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* css variables */
+:root {
+    --text-color : #fff;
+    --buttons-color : #FF6565;
+    --head-title : #071629;
+}
+
+
+
+/* structure classes */
+.section-head-titles {
+    font-family: Source Sans Pro;
+    font-size: 32px;
+    text-align: center;
+    color: var(--head-title);
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+header {
+    padding: 2em 0;
+    position: fixed;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo img {
+    width: 161px;
+    height: 32px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+header nav ul li a {
+    font-family: Source Sans Pro;
+    color: var(--text-color);
+    text-decoration: none;
+    opacity: .7;
+    transition: .4s;
+    display: block;
+}
+
+header nav ul a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+.Welcome {
+    background: url(assets/background.png) no-repeat;
+    background-size: cover;
+    padding: 18em 0 0;
+    height: 100vh;
+}
+
+.Welcome .text-box {
+    font-family: Source Sans Pro;
+    width: 50%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+.Welcome .text-box p {
+    font-weight: 700;
+}
+
+.Welcome .text-box button {
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5019607843);
+    border-radius: 50px;
+    border: none;
+    padding: 1em 2em;
+    margin: 3em 0 4em;
+    cursor: pointer;
+    background-color: #FF6565;
+    color: #fff;
+    transition: 0.4s;
+}
